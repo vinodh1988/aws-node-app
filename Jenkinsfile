@@ -35,7 +35,7 @@ pipeline {
 
                 // Run Maven on a Unix agent.
                 // sh "kill \$(lsof -t -i:4000)" 
-                sh "nohup node index.js &"
+                sh "nohup node index.js \&"
                
                 // To run Maven on a Windows agent, use
                 // bat "mvn -Dmaven.test.failure.ignore=true clean package"
